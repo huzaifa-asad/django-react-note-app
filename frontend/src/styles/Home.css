@@ -1,0 +1,191 @@
+.note-auth-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.note-auth-btn {
+  flex: 1;
+  background: #23283a;
+  color: #7ecfff;
+  border: 1.5px solid #7ecfff;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 1px 4px #10121a22;
+}
+.note-auth-btn:hover {
+  background: #7ecfff;
+  color: #181c24;
+  border: 1.5px solid #3a8dde;
+}
+.login-btn {
+  /* Optionally, add a subtle left gradient for login */
+  background: linear-gradient(90deg, #23283a 80%, #3a8dde 100%);
+}
+.register-btn {
+  /* Optionally, add a subtle right gradient for register */
+  background: linear-gradient(90deg, #23283a 60%, #7ecfff 100%);
+}
+
+body, .dashboard-root {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #181c24;
+  color: #e3e6ed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-root {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: linear-gradient(120deg, #181c24 60%, #23283a 100%);
+}
+
+.note-create-panel {
+  background: #23283a;
+  min-width: 340px;
+  max-width: 340px;
+  height: 100vh;
+  box-shadow: 2px 0 16px 0 #10121a44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px 24px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.note-create-panel h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #7ecfff;
+  letter-spacing: 1px;
+}
+
+.note-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.note-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b3b8c5;
+  margin-bottom: 2px;
+}
+
+.note-input, .note-textarea {
+  background: #181c24;
+  color: #e3e6ed;
+  border: 1.5px solid #31374a;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  transition: border 0.2s;
+  resize: none;
+}
+.note-input:focus, .note-textarea:focus {
+  border: 1.5px solid #7ecfff;
+  outline: none;
+}
+
+.note-submit-btn {
+  background: linear-gradient(90deg, #7ecfff 0%, #3a8dde 100%);
+  color: #181c24;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px #10121a33;
+  transition: background 0.2s, color 0.2s;
+}
+.note-submit-btn:hover {
+  background: linear-gradient(90deg, #3a8dde 0%, #7ecfff 100%);
+  color: #fff;
+}
+
+.notes-list-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 40px 32px 32px 32px;
+  overflow: hidden;
+}
+
+.notes-list-header {
+
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.notes-list-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7ecfff;
+  margin: 0;
+}
+
+.logout-btn {
+  background: linear-gradient(90deg, #f44336 60%, #d32f2f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #10121a22;
+  transition: background 0.2s, color 0.2s;
+  margin-left: auto;
+  letter-spacing: 0.5px;
+}
+.logout-btn:hover {
+  background: linear-gradient(90deg, #d32f2f 60%, #f44336 100%);
+  color: #fff;
+}
+
+.notes-list-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  scrollbar-width: thin;
+  scrollbar-color: #7ecfff #23283a;
+}
+.notes-list-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.notes-list-scroll::-webkit-scrollbar-thumb {
+  background: #7ecfff;
+  border-radius: 8px;
+}
+.notes-list-scroll::-webkit-scrollbar-track {
+  background: #23283a;
+}
+
+.no-notes-msg {
+  color: #b3b8c5;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 40px;
+}
